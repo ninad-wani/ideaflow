@@ -1,0 +1,99 @@
+.idea {
+  width: 100%;
+  margin: 10px;
+  padding: 26px;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.input-holder {
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.input-holder label {
+  padding-left: 26px;
+  margin: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.input-holder label i {
+  margin-right: 6px;
+}
+
+.input-internal {
+    display: flex;
+}
+
+#delete-idea {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.suggestion-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  height: fit-content;
+  max-height: 40%;
+  overflow-y: scroll;
+  color: white;
+  list-style-type: none;
+  width: 40%;
+  /* inner glow 👇 */
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.suggestion-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-list li:hover {
+  background-color: #5ba4ad;
+  color: #113a40;
+}
+
+.ideas-holder {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.references-list {
+  padding-left: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
+  margin: 0;
+}
+
+.blue-text {
+  color: #55a4ae;
+  cursor: pointer;
+  text-shadow: 0px 0px 1px #55a4ae;
+}
+
+.blue-text :hover {
+    color: #03dcf8;
+}
+
+@media screen and (max-width: 767px) {
+  .ideas-holder {
+    width: 80% !important;
+  }
+
+  .left-container {
+    width: 16%;
+    margin: 0;
+  }
+
+  .suggestion-list {
+    width: 80%;
+  }
+}
